@@ -12,7 +12,7 @@ class HomeViewModel : ObservableObject {
 		self.fetchAllCountriesTotals()
 	}
 	
-	//	MARK: Busca da API os tatais mundiais
+	//	MARK: Busca da API os totais mundiais
 	func fetchWorldTotals() {
 		guard let url = URL(string: API_URL_WORLD) else { return }
 		var request = URLRequest(url: url)
