@@ -17,7 +17,8 @@ struct RecentView: View {
 					SearchView(searchText: $searchText)
 				}
 				
-				CardView(worldData: viewModel.worldData.first ?? WorldData())
+				CardView(
+					worldData: viewModel.worldData.first ?? WorldData())
 				
 				HeaderView()
 				
@@ -25,9 +26,11 @@ struct RecentView: View {
 					ForEach(viewModel.countryData.filter {
 						self.searchText.isEmpty ? true :
 						$0.country!.lowercased().contains(self.searchText.lowercased())
-					}, id: \.country) {
-						countryData in CountryDataRowView(
-							country: countryData)
+					}, id: \.country) { countryData in
+						NavigationLink(
+							destination: CountryDetailView(countryData: countryData)) {
+							CountryDataRowView(country: countryData)
+						}
 					}
 				}.listStyle(PlainListStyle())
 			}
