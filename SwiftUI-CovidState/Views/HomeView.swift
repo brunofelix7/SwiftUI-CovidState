@@ -9,7 +9,12 @@ struct HomeView: View {
 					TabContentView(imageName: "chart.bar", text: "Recent")
 				}
 				.tag(0)
-			//	TODO: Criar outra tab para MapView
+			MapContainerView(viewModel: .init())
+				.edgesIgnoringSafeArea(.vertical)
+				.tabItem {
+					TabContentView(imageName: "map", text: "Maps")
+				}
+				.tag(1)
 		}
     }
 }

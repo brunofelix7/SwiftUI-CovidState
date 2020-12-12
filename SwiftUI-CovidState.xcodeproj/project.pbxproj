@@ -21,6 +21,9 @@
 		ACC142D72583D42B0062267C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC142D62583D42B0062267C /* SearchView.swift */; };
 		ACE0BF18258556EF001F09DB /* CountryDetailRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE0BF17258556EF001F09DB /* CountryDetailRowView.swift */; };
 		ACE0BF1B25855B4D001F09DB /* CountryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE0BF1A25855B4D001F09DB /* CountryDetailView.swift */; };
+		ACE0BF2025856712001F09DB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE0BF1F25856712001F09DB /* MapView.swift */; };
+		ACE0BF2425856773001F09DB /* CovidCaseAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE0BF2325856773001F09DB /* CovidCaseAnnotation.swift */; };
+		ACE0BF2725857F96001F09DB /* MapContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE0BF2625857F96001F09DB /* MapContainerView.swift */; };
 		ACF0B3F7257D93D200F70079 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0B3F6257D93D200F70079 /* HomeViewModel.swift */; };
 		ACF0B3FB257D95ED00F70079 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0B3FA257D95ED00F70079 /* Constants.swift */; };
 		ACF0B3FF257D9C1D00F70079 /* WorldData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0B3FE257D9C1D00F70079 /* WorldData.swift */; };
@@ -46,6 +49,9 @@
 		ACC142D62583D42B0062267C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		ACE0BF17258556EF001F09DB /* CountryDetailRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailRowView.swift; sourceTree = "<group>"; };
 		ACE0BF1A25855B4D001F09DB /* CountryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailView.swift; sourceTree = "<group>"; };
+		ACE0BF1F25856712001F09DB /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		ACE0BF2325856773001F09DB /* CovidCaseAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidCaseAnnotation.swift; sourceTree = "<group>"; };
+		ACE0BF2625857F96001F09DB /* MapContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContainerView.swift; sourceTree = "<group>"; };
 		ACF0B3F6257D93D200F70079 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		ACF0B3FA257D95ED00F70079 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		ACF0B3FE257D9C1D00F70079 /* WorldData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldData.swift; sourceTree = "<group>"; };
@@ -92,6 +98,16 @@
 				ACE0BF17258556EF001F09DB /* CountryDetailRowView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		ACE0BF1D258566E5001F09DB /* MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				ACE0BF1F25856712001F09DB /* MapView.swift */,
+				ACE0BF2625857F96001F09DB /* MapContainerView.swift */,
+				ACE0BF2325856773001F09DB /* CovidCaseAnnotation.swift */,
+			);
+			path = MapKit;
 			sourceTree = "<group>";
 		};
 		ACF0B3F1257D936600F70079 /* ViewModels */ = {
@@ -162,6 +178,7 @@
 		ACFF0916257D8F8600AC56CB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ACE0BF1D258566E5001F09DB /* MapKit */,
 				AC4ACBB2257E606A0090DF3C /* Components */,
 				ACFF0903257D8D9200AC56CB /* InitializerApp.swift */,
 				ACFF0905257D8D9200AC56CB /* HomeView.swift */,
@@ -240,6 +257,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE0BF2425856773001F09DB /* CovidCaseAnnotation.swift in Sources */,
+				ACE0BF2725857F96001F09DB /* MapContainerView.swift in Sources */,
 				AC619691257F0001009E4619 /* HeaderView.swift in Sources */,
 				AC619694257F010A009E4619 /* TextHeaderView.swift in Sources */,
 				ACF0B3FF257D9C1D00F70079 /* WorldData.swift in Sources */,
@@ -247,6 +266,7 @@
 				ACE0BF1B25855B4D001F09DB /* CountryDetailView.swift in Sources */,
 				ACFF0906257D8D9200AC56CB /* HomeView.swift in Sources */,
 				ACF0B3F7257D93D200F70079 /* HomeViewModel.swift in Sources */,
+				ACE0BF2025856712001F09DB /* MapView.swift in Sources */,
 				AC6196A5257F1E59009E4619 /* TotalDataCardView.swift in Sources */,
 				ACE0BF18258556EF001F09DB /* CountryDetailRowView.swift in Sources */,
 				ACFF0904257D8D9200AC56CB /* InitializerApp.swift in Sources */,
