@@ -6,7 +6,7 @@ struct HomeView: View {
 		TabView {
 			RecentView(viewModel: .init())
 				.tabItem {
-					TabComponent(imageName: "chart.bar", text: "Recent")
+					TabContentView(imageName: "chart.bar", text: "Recent")
 				}
 				.tag(0)
 			//	TODO: Criar outra tab para MapView
@@ -16,6 +16,6 @@ struct HomeView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-		HomeView()
+		HomeView().colorScheme(.dark)
     }
 }

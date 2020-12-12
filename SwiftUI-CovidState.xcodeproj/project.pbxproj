@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		AC4ACBB0257DCC660090DF3C /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4ACBAF257DCC660090DF3C /* DoubleExtension.swift */; };
-		AC4ACBB4257E61C10090DF3C /* TabComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4ACBB3257E61C10090DF3C /* TabComponent.swift */; };
+		AC4ACBB4257E61C10090DF3C /* TabContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4ACBB3257E61C10090DF3C /* TabContentView.swift */; };
 		AC4ACBB8257E62C00090DF3C /* RecentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4ACBB7257E62C00090DF3C /* RecentView.swift */; };
-		AC619691257F0001009E4619 /* ListHeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC619690257F0001009E4619 /* ListHeaderComponent.swift */; };
+		AC619691257F0001009E4619 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC619690257F0001009E4619 /* HeaderView.swift */; };
 		AC619694257F010A009E4619 /* TextHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC619693257F010A009E4619 /* TextHeaderView.swift */; };
 		AC619697257F080B009E4619 /* CountryDataRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC619696257F080B009E4619 /* CountryDataRowView.swift */; };
 		AC61969A257F08E1009E4619 /* TextRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC619699257F08E1009E4619 /* TextRowView.swift */; };
@@ -18,6 +18,7 @@
 		AC6196A2257F0E0E009E4619 /* FormatterUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6196A1257F0E0E009E4619 /* FormatterUtil.swift */; };
 		AC6196A5257F1E59009E4619 /* TotalDataCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6196A4257F1E59009E4619 /* TotalDataCardView.swift */; };
 		AC73AC6F257F23970084783D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73AC6E257F23970084783D /* CardView.swift */; };
+		ACC142D72583D42B0062267C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC142D62583D42B0062267C /* SearchView.swift */; };
 		ACF0B3F7257D93D200F70079 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0B3F6257D93D200F70079 /* HomeViewModel.swift */; };
 		ACF0B3FB257D95ED00F70079 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0B3FA257D95ED00F70079 /* Constants.swift */; };
 		ACF0B3FF257D9C1D00F70079 /* WorldData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0B3FE257D9C1D00F70079 /* WorldData.swift */; };
@@ -30,9 +31,9 @@
 
 /* Begin PBXFileReference section */
 		AC4ACBAF257DCC660090DF3C /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
-		AC4ACBB3257E61C10090DF3C /* TabComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabComponent.swift; sourceTree = "<group>"; };
+		AC4ACBB3257E61C10090DF3C /* TabContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabContentView.swift; sourceTree = "<group>"; };
 		AC4ACBB7257E62C00090DF3C /* RecentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentView.swift; sourceTree = "<group>"; };
-		AC619690257F0001009E4619 /* ListHeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeaderComponent.swift; sourceTree = "<group>"; };
+		AC619690257F0001009E4619 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		AC619693257F010A009E4619 /* TextHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextHeaderView.swift; sourceTree = "<group>"; };
 		AC619696257F080B009E4619 /* CountryDataRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDataRowView.swift; sourceTree = "<group>"; };
 		AC619699257F08E1009E4619 /* TextRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRowView.swift; sourceTree = "<group>"; };
@@ -40,6 +41,7 @@
 		AC6196A1257F0E0E009E4619 /* FormatterUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterUtil.swift; sourceTree = "<group>"; };
 		AC6196A4257F1E59009E4619 /* TotalDataCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalDataCardView.swift; sourceTree = "<group>"; };
 		AC73AC6E257F23970084783D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		ACC142D62583D42B0062267C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		ACF0B3F6257D93D200F70079 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		ACF0B3FA257D95ED00F70079 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		ACF0B3FE257D9C1D00F70079 /* WorldData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldData.swift; sourceTree = "<group>"; };
@@ -75,13 +77,14 @@
 		AC4ACBB2257E606A0090DF3C /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				AC4ACBB3257E61C10090DF3C /* TabComponent.swift */,
-				AC619690257F0001009E4619 /* ListHeaderComponent.swift */,
+				AC4ACBB3257E61C10090DF3C /* TabContentView.swift */,
+				AC619690257F0001009E4619 /* HeaderView.swift */,
 				AC619696257F080B009E4619 /* CountryDataRowView.swift */,
 				AC619693257F010A009E4619 /* TextHeaderView.swift */,
 				AC619699257F08E1009E4619 /* TextRowView.swift */,
 				AC6196A4257F1E59009E4619 /* TotalDataCardView.swift */,
 				AC73AC6E257F23970084783D /* CardView.swift */,
+				ACC142D62583D42B0062267C /* SearchView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -231,7 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC619691257F0001009E4619 /* ListHeaderComponent.swift in Sources */,
+				AC619691257F0001009E4619 /* HeaderView.swift in Sources */,
 				AC619694257F010A009E4619 /* TextHeaderView.swift in Sources */,
 				ACF0B3FF257D9C1D00F70079 /* WorldData.swift in Sources */,
 				AC6196A2257F0E0E009E4619 /* FormatterUtil.swift in Sources */,
@@ -241,10 +244,11 @@
 				ACFF0904257D8D9200AC56CB /* InitializerApp.swift in Sources */,
 				ACF0B402257D9E0700F70079 /* CountryData.swift in Sources */,
 				AC61969A257F08E1009E4619 /* TextRowView.swift in Sources */,
+				ACC142D72583D42B0062267C /* SearchView.swift in Sources */,
 				AC4ACBB0257DCC660090DF3C /* DoubleExtension.swift in Sources */,
 				AC61969F257F0B88009E4619 /* IntExtension.swift in Sources */,
 				AC619697257F080B009E4619 /* CountryDataRowView.swift in Sources */,
-				AC4ACBB4257E61C10090DF3C /* TabComponent.swift in Sources */,
+				AC4ACBB4257E61C10090DF3C /* TabContentView.swift in Sources */,
 				AC4ACBB8257E62C00090DF3C /* RecentView.swift in Sources */,
 				AC73AC6F257F23970084783D /* CardView.swift in Sources */,
 				ACF0B3FB257D95ED00F70079 /* Constants.swift in Sources */,

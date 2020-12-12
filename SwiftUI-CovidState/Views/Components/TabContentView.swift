@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct TabComponent : View {
+struct TabContentView : View {
 	
 	let imageName: String
 	let text: String
