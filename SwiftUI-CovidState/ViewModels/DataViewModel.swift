@@ -1,6 +1,6 @@
 import Foundation
 
-class HomeViewModel : ObservableObject {
+class DataViewModel : ObservableObject {
 	
 	@Published private(set) var worldData: [WorldData]
 	@Published private(set) var countryData: [CountryData]

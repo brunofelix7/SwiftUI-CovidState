@@ -2,12 +2,14 @@ import SwiftUI
 
 struct RecentView: View {
 	
-	@ObservedObject var viewModel: HomeViewModel
+	@ObservedObject var viewModel: DataViewModel
+	@ObservedObject var statisticsViewModel = DataStatisticsViewModel(detailedCountryData: .init())
 	@State var searchText = ""
 	@State var isSearchVisible = false
 	
-	init(viewModel: HomeViewModel) {
+	init(viewModel: DataViewModel) {
 		self.viewModel = viewModel
+		self.statisticsViewModel.fetchStateByCountry(country: "Brazil")
 	}
 	
     var body: some View {

@@ -2,9 +2,9 @@ import SwiftUI
 
 struct MapContainerView: View {
 	
-	@ObservedObject var viewModel: HomeViewModel
+	@ObservedObject var viewModel: DataViewModel
 	
-	init(viewModel: HomeViewModel) {
+	init(viewModel: DataViewModel) {
 		self.viewModel = viewModel
 	}
 	

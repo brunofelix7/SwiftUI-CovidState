@@ -19,6 +19,10 @@ struct CountryDataRowView: View {
 			TextRowView(text: formatNumber(number: country.deaths) ?? "-")
 				.frame(height: 40, alignment: .trailing)
 				.foregroundColor(Color.red)
+			Spacer()
+			TextRowView(text: formatNumber(number: country.recovered) ?? "-")
+				.frame(height: 40, alignment: .trailing)
+				.foregroundColor(Color.green)
 		}
     }
 }
