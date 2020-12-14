@@ -2,7 +2,7 @@ import Foundation
 
 class DataStatisticsViewModel: ObservableObject {
 	
-	@Published var detailedCountryData: DetailedCountryData?
+	@Published private(set) var detailedCountryData: DetailedCountryData
 	
 	init(detailedCountryData: DetailedCountryData) {
 		self.detailedCountryData = detailedCountryData
@@ -31,28 +31,28 @@ class DataStatisticsViewModel: ObservableObject {
 								
 								if let deathsDictionary = deaths {
 									if let newDeaths = deathsDictionary["new"] as? String {
-										self.detailedCountryData?.newDeaths = Int64(newDeaths)
+										self.detailedCountryData.newDeaths = Int64(newDeaths)
 									}
-									self.detailedCountryData?.deaths = deathsDictionary["total"] as? Int64
+									self.detailedCountryData.deaths = deathsDictionary["total"] as? Int64
 								}
 								
 								if let testsDictionary = tests {
-									self.detailedCountryData?.testsDone = testsDictionary["total"] as? Int64
+									self.detailedCountryData.testsDone = testsDictionary["total"] as? Int64
 								}
 								
 								if let casesDictionary = cases {
 									if let newCases = casesDictionary["new"] as? String {
-										self.detailedCountryData?.newCases = Int64(newCases)
+										self.detailedCountryData.newCases = Int64(newCases)
 									}
-									self.detailedCountryData?.criticalCases = casesDictionary["critical"] as? Int64
-									self.detailedCountryData?.confirmedCases = casesDictionary["total"] as? Int64
-									self.detailedCountryData?.activeCases = casesDictionary["active"] as? Int64
-									self.detailedCountryData?.recoveredCases = casesDictionary["recovered"] as? Int64
+									self.detailedCountryData.criticalCases = casesDictionary["critical"] as? Int64
+									self.detailedCountryData.confirmedCases = casesDictionary["total"] as? Int64
+									self.detailedCountryData.activeCases = casesDictionary["active"] as? Int64
+									self.detailedCountryData.recoveredCases = casesDictionary["recovered"] as? Int64
 								}
 								
-								self.detailedCountryData?.country = country
-								self.detailedCountryData?.day = day
-								self.detailedCountryData?.time = time								
+								self.detailedCountryData.country = country
+								self.detailedCountryData.day = day
+								self.detailedCountryData.time = time								
 							}
 						}
 					}
