@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC0EB9FD25884DC6004C3ED3 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0EB9FC25884DC6004C3ED3 /* FooterView.swift */; };
+		AC0EBA0025884FDD004C3ED3 /* FormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0EB9FF25884FDD004C3ED3 /* FormatterExtension.swift */; };
 		AC4ACBB0257DCC660090DF3C /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4ACBAF257DCC660090DF3C /* DoubleExtension.swift */; };
 		AC4ACBB4257E61C10090DF3C /* TabContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4ACBB3257E61C10090DF3C /* TabContentView.swift */; };
 		AC4ACBB8257E62C00090DF3C /* RecentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4ACBB7257E62C00090DF3C /* RecentView.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC0EB9FC25884DC6004C3ED3 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		AC0EB9FF25884FDD004C3ED3 /* FormatterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterExtension.swift; sourceTree = "<group>"; };
 		AC4ACBAF257DCC660090DF3C /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
 		AC4ACBB3257E61C10090DF3C /* TabContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabContentView.swift; sourceTree = "<group>"; };
 		AC4ACBB7257E62C00090DF3C /* RecentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentView.swift; sourceTree = "<group>"; };
@@ -84,6 +88,7 @@
 			children = (
 				AC4ACBAF257DCC660090DF3C /* DoubleExtension.swift */,
 				AC61969E257F0B88009E4619 /* IntExtension.swift */,
+				AC0EB9FF25884FDD004C3ED3 /* FormatterExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -100,6 +105,7 @@
 				AC73AC6E257F23970084783D /* CardView.swift */,
 				ACC142D62583D42B0062267C /* SearchView.swift */,
 				ACE0BF17258556EF001F09DB /* CountryDetailRowView.swift */,
+				AC0EB9FC25884DC6004C3ED3 /* FooterView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -268,12 +274,14 @@
 				AC619691257F0001009E4619 /* HeaderView.swift in Sources */,
 				AC619694257F010A009E4619 /* TextHeaderView.swift in Sources */,
 				ACF0B3FF257D9C1D00F70079 /* WorldData.swift in Sources */,
+				AC0EBA0025884FDD004C3ED3 /* FormatterExtension.swift in Sources */,
 				ACE0BF2F25867C94001F09DB /* DetailedCountryData.swift in Sources */,
 				AC6196A2257F0E0E009E4619 /* FormatterUtil.swift in Sources */,
 				ACE0BF1B25855B4D001F09DB /* CountryDetailView.swift in Sources */,
 				ACFF0906257D8D9200AC56CB /* HomeView.swift in Sources */,
 				ACF0B3F7257D93D200F70079 /* DataViewModel.swift in Sources */,
 				ACE0BF2025856712001F09DB /* MapView.swift in Sources */,
+				AC0EB9FD25884DC6004C3ED3 /* FooterView.swift in Sources */,
 				AC6196A5257F1E59009E4619 /* TotalDataCardView.swift in Sources */,
 				ACE0BF18258556EF001F09DB /* CountryDetailRowView.swift in Sources */,
 				ACFF0904257D8D9200AC56CB /* InitializerApp.swift in Sources */,

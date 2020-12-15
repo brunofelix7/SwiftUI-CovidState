@@ -34,6 +34,8 @@ struct RecentView: View {
 						}
 					}
 				}.listStyle(PlainListStyle())
+				
+				FooterView(lastUpdate: viewModel.worldData.first?.lastUpdate ?? WorldData().lastUpdate)
 			}
 			.navigationBarTitle("COVID-19 State", displayMode: .inline)
 			.navigationBarItems(

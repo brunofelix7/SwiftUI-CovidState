@@ -1,5 +1,3 @@
-import Foundation
-
 //	MARK: Host da API
 let API_HOST: String = "covid-19-data.p.rapidapi.com"
 
@@ -35,3 +33,6 @@ let LABEL_RECOVERED_RATE: String = "Taxa de recuperados"
 let LABEL_HEADER_CONFIRMED: String = "Conf."
 let LABEL_HEADER_RECOVERED: String = "Recup."
 let LABEL_SEARCH_COUNTRY: String = "País..."
+let LABEL_LAST_UPDATE: String = "Última atualização:"
+let LABEL_TAB_RECENT: String = "Recentes"
+let LABEL_TAB_MAP: String = "Mapa"

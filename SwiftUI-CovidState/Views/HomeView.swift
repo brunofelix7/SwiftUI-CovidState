@@ -6,13 +6,13 @@ struct HomeView: View {
 		TabView {
 			RecentView(viewModel: .init(), statisticsViewModel: .init(detailedCountryData: .init()))
 				.tabItem {
-					TabContentView(imageName: "chart.bar", text: "Recent")
+					TabContentView(imageName: "chart.bar", text: LABEL_TAB_RECENT)
 				}
 				.tag(0)
 			MapContainerView(viewModel: .init())
 				.edgesIgnoringSafeArea(.vertical)
 				.tabItem {
-					TabContentView(imageName: "map", text: "Maps")
+					TabContentView(imageName: "map", text: LABEL_TAB_MAP)
 				}
 				.tag(1)
 		}

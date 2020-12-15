@@ -59,7 +59,7 @@ struct CountryDetailView: View {
 				
 				Spacer()
 			}
-			.padding(.top, 25)
+			.padding(.top, 20)
 			.navigationBarTitle(countryName)
 			.navigationBarBackButtonHidden(false)
 			.onAppear() {
@@ -67,6 +67,8 @@ struct CountryDetailView: View {
 				self.getStatistics()
 			}
 		}
+		
+		FooterView(lastUpdate: viewModel.detailedCountryData.time ?? "")
     }
 	
 	private func getStatistics() {
