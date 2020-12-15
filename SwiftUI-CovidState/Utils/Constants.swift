@@ -17,3 +17,21 @@ let API_URL_COUNTRIES = "https://covid-19-data.p.rapidapi.com/country/all"
 
 //	MARK: Endpoint da API de estatísticas
 let API_URL_STATISTICS: String = "https://covid-193.p.rapidapi.com/statistics?country="
+
+//	MARK: Label dos textos do aplicativo
+let LABEL_COUNTRY: String = "País"
+let LABEL_CONFIRMED: String = "Confirmados"
+let LABEL_DEATHS: String = "Mortes"
+let LABEL_RECOVERED: String = "Recuperados"
+let LABEL_CRITICAL: String = "Críticos"
+let LABEL_ACTIVE_CASES: String = "Casos ativos"
+let LABEL_NEW_CASES: String = "Novos casos"
+let LABEL_RECOVERED_CASES: String = "Casos recuperados"
+let LABEL_CRITICAL_CASES: String = "Casos críticos"
+let LABEL_NEW_DEATHS: String = "Novas mortes"
+let LABEL_TESTS_DONE: String = "Testes realizados"
+let LABEL_FATALITY_RATE: String = "Taxa de fatalidade"
+let LABEL_RECOVERED_RATE: String = "Taxa de recuperados"
+let LABEL_HEADER_CONFIRMED: String = "Conf."
+let LABEL_HEADER_RECOVERED: String = "Recup."
+let LABEL_SEARCH_COUNTRY: String = "País..."

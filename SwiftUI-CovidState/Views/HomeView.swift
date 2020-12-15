@@ -4,7 +4,7 @@ struct HomeView: View {
 	
     var body: some View {
 		TabView {
-			RecentView(viewModel: .init())
+			RecentView(viewModel: .init(), statisticsViewModel: .init(detailedCountryData: .init()))
 				.tabItem {
 					TabContentView(imageName: "chart.bar", text: "Recent")
 				}

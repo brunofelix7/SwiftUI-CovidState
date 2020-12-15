@@ -13,28 +13,28 @@ struct CardView: View {
 			HStack {
 				TotalDataCardView(
 					number: formatNumber(number: worldData.confirmed) ?? "-",
-					name: "Confirmed")
+					name: LABEL_CONFIRMED)
 				TotalDataCardView(
 					number: formatNumber(number: worldData.critical) ?? "-",
-					name: "Critical",
+					name: LABEL_CRITICAL,
 					color: .yellow)
 				TotalDataCardView(
 					number: formatNumber(number: worldData.deaths) ?? "-",
-					name: "Deaths",
+					name: LABEL_DEATHS,
 					color: .red)
 			}
 			HStack {
 				TotalDataCardView(
 					number: String(format: "%.2f", worldData.fatalityRate),
-					name: "Death %",
+					name: LABEL_DEATHS + " %",
 					color: .red)
 				TotalDataCardView(
 					number: formatNumber(number: worldData.recovered) ?? "-",
-					name: "Recovered",
+					name: LABEL_RECOVERED,
 					color: .green)
 				TotalDataCardView(
 					number: String(format: "%.2f", worldData.recoveredRate),
-					name: "Recovered %",
+					name: LABEL_RECOVERED + " %",
 					color: .green)
 			}
 		}

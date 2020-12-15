@@ -6,7 +6,7 @@ struct SearchView: View {
 	
     var body: some View {
 		HStack {
-			TextField("Country...", text: $searchText).padding()
+			TextField(LABEL_SEARCH_COUNTRY, text: $searchText).padding()
 		}
 		.frame(height: 50)
 		.background(Color("cardBackground"))

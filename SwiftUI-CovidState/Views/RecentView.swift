@@ -3,13 +3,13 @@ import SwiftUI
 struct RecentView: View {
 	
 	@ObservedObject var viewModel: DataViewModel
-	@ObservedObject var statisticsViewModel = DataStatisticsViewModel(detailedCountryData: .init())
+	@ObservedObject var statisticsViewModel: DataStatisticsViewModel
 	@State var searchText = ""
 	@State var isSearchVisible = false
-	
-	init(viewModel: DataViewModel) {
+		
+	init(viewModel: DataViewModel, statisticsViewModel: DataStatisticsViewModel) {
 		self.viewModel = viewModel
-		self.statisticsViewModel.fetchStateByCountry(country: "Brazil")
+		self.statisticsViewModel = statisticsViewModel
 	}
 	
     var body: some View {
@@ -35,8 +35,7 @@ struct RecentView: View {
 					}
 				}.listStyle(PlainListStyle())
 			}
-			.navigationBarTitle("COVID-19 State",
-								displayMode: .inline)
+			.navigationBarTitle("COVID-19 State", displayMode: .inline)
 			.navigationBarItems(
 				trailing: Button(
 					action: {
@@ -53,6 +52,6 @@ struct RecentView: View {
 
 struct RecentView_Previews: PreviewProvider {
     static var previews: some View {
-		RecentView(viewModel: .init()).colorScheme(.dark)
+		RecentView(viewModel: .init(), statisticsViewModel: .init(detailedCountryData: .init())).colorScheme(.dark)
     }
 }
